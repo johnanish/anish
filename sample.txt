@@ -4,4 +4,4 @@ Adding 2 more lines
 
 Hello folks!
 
-Welcme to php!
+Welcome to php!
