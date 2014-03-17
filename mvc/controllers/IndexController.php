@@ -1,9 +1,7 @@
 <?php
 
 
-class IndexController extends WebController {
-
-	public function __construct() {}
+class IndexController extends WebControllerCore {
 
 	public function indexAction() {
 		echo "You hit the index!!!";

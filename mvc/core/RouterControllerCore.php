@@ -1,7 +1,7 @@
 <?php
 
 
-class RouterController {
+class RouterControllerCore {
 
 	public function __construct() {}
 
@@ -31,6 +31,17 @@ class RouterController {
 		}
 
 		return $result;
+
+	}
+
+	public function dispatch( $controllerName, $actionName ) {
+
+		// Todo: Pre-dispatch here
+
+		$controller = new $controllerName;
+		$controller->$actionName();
+
+		// Todo: Post-dispatch here
 	}
 
 }

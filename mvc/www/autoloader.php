@@ -3,17 +3,25 @@
 function __autoload( $class_name ) {
 
 	$paths = array(
+		// Project's controllers
 		array(
 			'type' => 'controller',
 			'location' => 'controllers/'
 		),
+		// Project's models
 		array(
 			'type' => 'model',
 			'location' => 'models/'
 		),
+		// Project's views
 		array(
 			'type' => 'view',
 			'location' => 'views/'
+		),
+		// Core "vendor" classes, such as the web controller and view stuff
+		array(
+			'type' => 'core',
+			'location' => 'core/'
 		)
 	);
 
